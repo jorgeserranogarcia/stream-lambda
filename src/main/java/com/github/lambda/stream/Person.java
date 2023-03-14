@@ -1,4 +1,4 @@
-package com.github.jorgenringen.lambda.stream;
+package com.github.lambda.stream;
 
 public class Person {
 

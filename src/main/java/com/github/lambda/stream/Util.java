@@ -1,4 +1,4 @@
-package com.github.jorgenringen.lambda.stream;
+package com.github.lambda.stream;
 
 import java.util.IntSummaryStatistics;
 import java.util.List;
