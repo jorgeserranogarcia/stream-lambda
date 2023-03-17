@@ -118,6 +118,20 @@ public class UtilTest {
     }
 
     @Test
+    public void shouldPartitionByName() {
+        Person duke = new Person("Duke", 10);
+        Person fred = new Person("Fred", 28);
+        Person john = new Person("John", 45);
+        List<Person> input = asList(duke, fred, john);
+
+        Map<String, Person> result = Util.partitionByName(input);
+
+        assertThat(result.get("Duke"), equalTo(duke));
+        assertThat(result.get("Fred"), equalTo(fred));
+        assertThat(result.get("John"), equalTo(john));
+    }
+
+    @Test
     public void shouldPartitionAdults() {
         Person duke = new Person("Duke", 10);
         Person fred = new Person("Fred", 28);

@@ -50,6 +50,10 @@ public class Util {
         throw new RuntimeException();    
     }
 
+    public static Map<String, Person> partitionByName(List<Person> input) {
+        throw new RuntimeException();
+    }
+
     public static Map<Boolean, List<Person>> partitionAdults(List<Person> input) {
         throw new RuntimeException();    
     }
